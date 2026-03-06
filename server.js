@@ -13,8 +13,8 @@ const routes = require('./routes/index')
 
 // 1. Define your allowed origins
 const allowedOrigins = [
-  'http://localhost:5500/',
-  'https://sparkly-meerkat-ea194d.netlify.app/'
+  'http://localhost:5500',
+  'https://sparkly-meerkat-ea194d.netlify.app'
 ]; 
 
 const corsOptions = {
@@ -44,6 +44,7 @@ app.use('/api', routes)
 app.listen(process.env.PORT, () => {
     console.log(`Server is runnimg on Port ${process.env.PORT}`)
 })
+
 
 
 
